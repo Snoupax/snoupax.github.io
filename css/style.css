@@ -1,0 +1,424 @@
+/* COLOR */
+
+/*  Vert = #7ED957
+    Noir vert = #002E2D
+*/
+
+/* Font */
+
+@font-face {
+    font-family: "AileronReg";
+    src: url(/css/aileron/Aileron-Regular.otf), format("opentype");
+     /* font-family: 'AileronReg', sans-serif;
+     */
+}
+
+
+/* A ENLEVER */
+
+body {
+    background-color: #002E2D;
+}
+
+
+
+/* Banniere */
+.banniere {
+    background: linear-gradient(120deg, #7ED957,#002E2D);
+    color: #fff;
+    text-align: center;
+}
+
+.banniere h1 {
+    font-size: 4.5rem;
+    padding: 0.5rem 0.5rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.banniere h2 {
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-family: 'AileronReg', sans-serif;
+}
+
+.banniere hr {
+    height: 3px;
+    background-color: #7ED957;
+    text-align: center;
+    width: 100%;
+    border: none;
+    margin-bottom: 0;
+}
+
+#buttonCV {
+    box-sizing: border-box;
+    border: solid 2px #fff;
+    background-color: #002E2D;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+}
+
+#linkCV {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+}
+
+
+/* Nav Mobile */
+
+.navigationCheckbox {
+    display: none;
+}
+
+.navigationBg {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    background-image: linear-gradient(210deg, #7ED957, #002E2D);
+    z-index: 1000;
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    border: solid 1px #002E2D;
+}
+
+.navigationButton {
+    background-color: #002E2D;
+    height: 7rem;
+    width: 7rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    border-radius: 50%;
+    z-index: 2000;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px #7ED957;
+    box-sizing: border-box;
+}
+
+.navigationIcon {
+    position: relative;
+    margin-top: 3.5rem;
+    width: 3rem;
+    height: 2px;
+    background-color: #7ED957;
+    display: inline-block;
+}
+
+.navigationIcon::before,
+.navigationIcon::after {
+    width: 3rem;
+    height: 2px;
+    background-color: #7ED957;
+    display: inline-block;
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .2s;
+}
+
+.navigationIcon::before {
+    top: -.8rem;
+}
+
+.navigationIcon::after {
+    top: .8rem;
+}
+
+.nav {
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    top: 1rem;
+    opacity: 0;
+    z-index: 1500;
+    transition: opacity 400ms 50ms ease-out;
+    display: flex;
+    flex-direction: column;
+}
+
+.lien {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navigationCheckbox:checked ~ .navigationBg {
+    transform: scale(25);
+}
+
+.navigationCheckbox:checked ~ .nav {
+    opacity: 1;
+    width: 100%;
+    transition: opacity 1s 250ms ease-in;
+}
+
+
+.navigationCheckbox:checked+ .navigationButton .navigationIcon {
+    background-color: transparent;
+}
+
+.navigationCheckbox:checked+ .navigationButton .navigationIcon::before {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.navigationCheckbox:checked+ .navigationButton .navigationIcon::after {
+    top: 0;
+    transform: rotate(-135deg);
+}
+
+.navigationItem {
+    text-align: center;
+}
+
+.menuM-Item {
+    box-sizing: border-box;
+    margin: 0.5rem 2.5rem;
+    width: 80%;
+    border-radius: 100px;
+    border: solid 2px #7ED957;
+    background-color: #002E2D;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+}
+
+.menuM-Item h3 {
+    display: inline-block;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.250rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #7ED957;
+    box-sizing: border-box;
+    padding: 0 1rem;
+    width: 50%;
+    text-align: center;
+    letter-spacing: 0.1rem;
+    position: relative;
+    top: 5px;
+}
+
+
+.nav button {
+    padding: 3.2rem;
+    border-radius: 50%;
+    border: solid 1px #002E2D;
+}
+
+button#buttonAbout {
+    background-image: url(../img/hand-peace-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button#buttonSkills {
+    background-image: url(../img/hand-peace-regular.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button#buttonPortfolio {
+    background-image: url(../img/dove-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button#buttonExperience {
+    background-image: url(../img/peace-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+button#buttonContact {
+    background-image: url(../img/address-card-solid.svg);
+    background-repeat: no-repeat;
+    background-size: 3rem;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+
+/* Switch FR / EN */
+
+.frEnSwitch {
+    position: relative;
+    top: 50px;
+    left: 150px;
+    width: 90px;
+}
+
+.frEnSwitch-checkbox {
+    display: none;
+}
+
+.frEnSwitch-label {
+    display: block;
+    overflow: hidden;
+    border: solid 2px #fff;
+    cursor: pointer;
+    border-radius: 40px;
+}
+
+.frEnSwitch-inner {
+    display: block;
+    width: 200%;
+    margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+
+.frEnSwitch-inner:before, .frEnSwitch-inner:after {
+    display: block; 
+    float: left; 
+    width: 50%; 
+    height: 30px; 
+    padding: 0; 
+    line-height: 30px;
+    font-size: 16px; 
+    color: white; 
+    font-family: Trebuchet, Arial, sans-serif; 
+    font-weight: bold;
+    box-sizing: border-box;
+}
+.frEnSwitch-inner:before {
+    content: "FR";
+    padding-left: 10px;
+    background-color: #002E2D; 
+    color: #FFFFFF;
+}
+.frEnSwitch-inner:after {
+    content: "EN";
+    padding-right: 10px;
+    background-color: #7ED957; 
+    color: #002E2D;
+    text-align: right;
+}
+.frEnSwitch-switch {
+    display: block; 
+    width: 24px; 
+    margin: 3px;
+    background: #FFFFFF;
+    position: absolute; 
+    top: 0; 
+    bottom: 0;
+    right: 56px;
+    border: 2px solid #999999; 
+    border-radius: 40px;
+    transition: all 0.3s ease-in 0s; 
+}
+.frEnSwitch-checkbox:checked + .frEnSwitch-label .frEnSwitch-inner {
+    margin-left: 0;
+}
+.frEnSwitch-checkbox:checked + .frEnSwitch-label .frEnSwitch-switch {
+    right: 0px; 
+}
+
+/* Main */
+
+/* About */
+
+#about {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+}
+
+.tabContent h2 {
+    font-family: 'AileronReg', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #fff;
+    color: #002E2D;
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+#textAbout p {
+    width: 80%;
+    font-family: 'AileronReg', sans-serif;
+    background-color: #fff;
+    color: #002E2D;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    margin: auto;
+}
+
+#textAbout {
+    width: 100%;
+}
+
+
+
+/* Footer */
+
+.footer {
+    padding: 0 30% 0 30%;
+}
+
+.copyright {
+    color: #fff;
+    margin: 10px 0;
+    padding-top: 10px;
+    border-top: 2px solid #7ED957;
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/* TABLETTE TEST */
+
+@media screen and (min-width: 685px) and (max-width: 1023px) {
+
+    .menuM-Item {
+        margin: 1rem 1.5rem;
+        width: 43%;
+        align-self: center;
+    }
+
+    .nav {
+        display: flex;
+        flex-flow: row wrap;
+        top: 0;
+    }
+
+    .navigationCheckbox:checked ~ .navigationBg {
+        transform: scale(30);
+    }
+
+    .frEnSwitch {
+        position: relative;
+        top: 110px;
+        left: 110px;
+        width: 90px;
+    }
+}

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <title>CV Quentin B.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+        <!-- font-family: 'Lato', sans-serif; -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+
+    <body>
+        <header> 
+            <!-- Banniere -->
+            <div class="banniere">
+                <h1 class="text">Quentin B.</h1>
+                <h2>Developpeur Web Junior</h2>
+                <button id="buttonCV"><a id="linkCV" href="#">Télécharger CV</a></button>
+                <hr>
+            </div>
+            <!-- Nav Mobile -->
+            <section class="menuMobile">
+                <div>
+                    <input type="checkbox" class="navigationCheckbox" id="navi">
+                    <label for="navi" class="navigationButton">
+                        <span class="navigationIcon">&nbsp;</span>
+                    </label>
+
+                    
+
+                    <div class="navigationBg">&nbsp;</div>
+
+                    
+                    <nav class="nav">
+
+
+                        <div class="menuM-Item tabLink" onclick="openPage('about', this, 'background: radial-gradient(circle, rgba(126,217,87,1) 0%, rgba(0,46,45,1) 20%);'), triggerOff()" id="defaultOpen">
+                            <button id="buttonAbout"></button>
+                            <h3>A propos</h3>
+                        </div>
+                        <div class="menuM-Item tabLink" onclick="openPage('skills', this, '#6f7171'), triggerOff()">
+                            <button id="buttonSkills"></button>
+                            <h3>Compétences</h3>
+                        </div>
+                        <div class="menuM-Item tabLink" onclick="openPage('portfolio', this, '#6f7171'), triggerOff()">
+                            <button id="buttonPortfolio"></button>
+                            <h3>Portefolio</h3>
+                        </div>
+                        <div class="menuM-Item tabLink" onclick="openPage('experience', this, '#6f7171'), triggerOff()">
+                            <button id="buttonExperience"></button>
+                            <h3>Expériences</h3>
+                        </div>
+                        <div class="menuM-Item tabLink" onclick="openPage('contact', this, '#6f7171'), triggerOff()">
+                            <button id="buttonContact"></button>
+                            <h3>Contact</h3>
+                        </div>
+                        <!-- <div class="container-frEnSwitch">
+                            <div class="frEnSwitch">
+                                <input type="checkbox" name="frEnSwitch" class="frEnSwitch-checkbox" id="frEnSwitch1" checked tabindex="0">
+                                <label class="frEnSwitch-label" for="frEnSwitch1">
+                                    <div class="frEnSwitch-inner"></div>
+                                    <span class="frEnSwitch-switch"></span>
+                                </label>
+                                
+                            </div>
+                        </div> -->
+
+                    </nav>
+                    
+
+                </div>
+            </section>
+        </header>
+        <main>
+            <!-- About -->
+            <section id="about" class="tabContent">
+                <h2>A propos</h2>
+                <div id="textAbout">
+                    <p>&emsp; Jeune homme de 26 ans passionné d'informatique, ayant acquis en autodidacte des bases en programmation et souhaite continuer de se former dans ce domaine. Dans le but de devenir Developpeur Web. BlablaBlabla Blabla Blabla Blabla Blabla Blabla Blabla Blabla Blabla Blabla Blabla. On test des trucs de fous et tout voilà... On test des trucs de fous et tout voilà... On test des trucs de fous et tout voilà...</p>
+                </div>
+            </section>
+
+            <!-- Skills -->
+            <section id="skills" class="tabContent" style="display:none">
+                <h2>Compétences</h2>
+            </section>
+
+            <!-- Experiences -->
+            <section id="experience" class="tabContent" style="display:none">
+                <h2>Expériences</h2>
+            </section>
+            <!-- Portfolio -->
+            <section id="portfolio" class="tabContent" style="display:none">
+                <h2>Portefolio</h2>
+            </section>
+            <!-- contact -->
+            <section id="contact" class="tabContent" style="display:none">
+                <h2>Contact</h2>
+            </section>
+        </main>
+        <footer>
+            <section class="footer">
+                <p class="copyright">
+                    Copyright © Quentin B.
+                </p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+            </section>
+        </footer>
+
+        <!-- OnePage -->
+        <script>
+            function openPage(pageName,elmnt,color) {
+                var i, tabContent, tabLinks;
+                tabContent = document.getElementsByClassName("tabContent");
+
+                for (i = 0; i < tabContent.length; i++) {
+                    tabContent[i].style.display = "none";
+                }
+
+                tabLinks = document.getElementsByClassName("tabLink");
+
+                for (i = 0; i < tabLinks.length; i++) {
+                    tabLinks[i].style.backgroundColor = "";
+                }
+
+                document.getElementById(pageName).style.display = "block";
+                elmnt.style.backgroundColor = color;
+            }
+
+            // Get the element with id="defaultOpen" and click on it
+            // document.getElementById("defaultOpen").click();
+        </script>
+        <!-- TriggerOff (Checkbox) -->
+        <script>
+            function triggerOff(){
+            document.getElementById('navi').checked = false;
+            }
+        </script>
+        <!-- Text Scramble -->
+        <script>
+            // ——————————————————————————————————————————————————
+            // TextScramble
+            // ——————————————————————————————————————————————————
+
+            class TextScramble {
+                constructor(el) {
+                    this.el = el
+                    this.chars = '!<>-_\\/[]{}—=+*^?#________'
+                    this.update = this.update.bind(this)
+                }
+                setText(newText) {
+                    const oldText = this.el.innerText
+                    const length = Math.max(oldText.length, newText.length)
+                    const promise = new Promise((resolve) => this.resolve = resolve)
+                    this.queue = []
+                    for (let i = 0; i < length; i++) {
+                        const from = oldText[i] || ''
+                        const to = newText[i] || ''
+                        const start = Math.floor(Math.random() * 40)
+                        const end = start + Math.floor(Math.random() * 40)
+                        this.queue.push({ from, to, start, end })
+                    }
+                    cancelAnimationFrame(this.frameRequest)
+                        this.frame = 0
+                        this.update()
+                        return promise
+                }
+                update() {
+                    let output = ''
+                    let complete = 0
+                    for (let i = 0, n = this.queue.length; i < n; i++) {
+                        let { from, to, start, end, char } = this.queue[i]
+                            if (this.frame >= end) {
+                                complete++
+                                output += to
+                            } else if (this.frame >= start) {
+                                if (!char || Math.random() < 0.28) {
+                                    char = this.randomChar()
+                                    this.queue[i].char = char
+                                }
+                                output += `<span class="dud">${char}</span>`
+                            } else {
+                                output += from
+                                }
+                    }
+
+                    this.el.innerHTML = output
+                    if (complete === this.queue.length) {
+                        this.resolve()
+                    } else {
+                        this.frameRequest = requestAnimationFrame(this.update)
+                        this.frame++
+                    }
+                }
+                randomChar() {
+                    return this.chars[Math.floor(Math.random() * this.chars.length)]
+                }
+            }
+
+            // ——————————————————————————————————————————————————
+            // Example
+            // ——————————————————————————————————————————————————
+
+            const phrases = [
+                'Quentin B.',
+                '{prenom}'
+            ]
+
+            const el = document.querySelector('.text')
+            const fx = new TextScramble(el)
+
+            let counter = 0
+            const next = () => {
+                fx.setText(phrases[counter]).then(() => {
+                    setTimeout(next, 2000)
+                })
+                counter = (counter + 1) % phrases.length
+            }
+
+            next()
+        
+        </script>
+    </body>
+ </html>
