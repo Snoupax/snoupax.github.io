@@ -18,9 +18,17 @@
 
 body {
     background-color: #002E2D;
+    margin: auto;
 }
 
 
+
+/* HEADER */
+
+header {
+    max-width: 1280px;
+    margin: auto;
+}
 
 /* Banniere */
 .banniere {
@@ -196,9 +204,9 @@ body {
     font-size: 0.850rem;
     font-weight: bold;
     text-transform: uppercase;
-    color: #7ED957;
+    color: #fff;
     box-sizing: border-box;
-    padding: 0 1rem;
+    margin: auto;
     width: 50%;
     text-align: center;
     letter-spacing: 0.1rem;
@@ -218,7 +226,7 @@ body {
 }
 
 button#buttonAbout {
-    background-image: url(../img/hand-peace-solid.svg);
+    background-image: url(../img/portrait.png);
 }
 
 button#buttonSkills {
@@ -226,11 +234,11 @@ button#buttonSkills {
 }
 
 button#buttonPortfolio {
-    background-image: url(../img/dove-solid.svg);
+    background-image: url(../img/photo-video-solid.svg);
 }
 
 button#buttonExperience {
-    background-image: url(../img/peace-solid.svg);
+    background-image: url(../img/valise.png);
 }
 
 button#buttonContact {
@@ -314,6 +322,11 @@ button#buttonContact {
 
 /* Main */
 
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
 /* About */
 
 #about {
@@ -354,8 +367,13 @@ button#buttonContact {
 
 /* Footer */
 
+footer {
+    max-width: 1920px;
+    margin: auto;
+}
+
 .footer {
-    padding: 0 30% 0 30%;
+    padding: 0 27% 0 27%;
 }
 
 .copyright {
@@ -383,6 +401,9 @@ button#buttonContact {
 
 /* RESPONSIVE */
 
+.menu {
+    display: none;
+}
 
 /* Big phone 425 -> 684 */
 
@@ -426,4 +447,34 @@ button#buttonContact {
         left: 110px;
         width: 90px;
     }
+}
+
+
+
+/* PC Responsive */
+
+
+@media screen and (min-width: 1024px) {
+
+    .menuMobile { 
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .menu-Item {
+        width: 25%;
+        color: white;
+        text-align: center;
+        padding: 12px;
+    }
+
+    .menu-Item h3 {
+        font-family: 'Lato', sans-serif;
+        font-size: 1.2rem;
+    }
+
 }

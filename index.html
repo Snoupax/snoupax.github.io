@@ -21,6 +21,24 @@
                 <a id="linkCV" href="img/CVQuentin.pdf" target="_blank"><button id="buttonCV">Télécharger CV</button></a>
                 <hr>
             </div>
+            <!-- Nav PC -->
+            <section class="menu">
+                <div class="menu-Item tabLink" onclick="openPage('about', this, '#7ED957'), triggerOff()" id="defaultOpen">
+                    <h3>A propos</h3>
+                </div>
+                <div class="menu-Item tabLink" onclick="openPage('skills', this, '#7ED957'), triggerOff()">
+                    <h3>Compétences</h3>
+                </div>
+                <div class="menu-Item tabLink" onclick="openPage('portfolio', this, '#7ED957'), triggerOff()">
+                    <h3>Portefolio</h3>
+                </div>
+                <div class="menu-Item tabLink" onclick="openPage('experience', this, '#7ED957'), triggerOff()">
+                    <h3>Expériences</h3>
+                </div>
+                <div class="menu-Item tabLink" onclick="openPage('contact', this, '#7ED957'), triggerOff()">
+                    <h3>Contact</h3>
+                </div>
+            </section>
             <!-- Nav Mobile -->
             <section class="menuMobile">
                 <div>
@@ -37,23 +55,23 @@
                     <nav class="nav">
 
 
-                        <div class="menuM-Item tabLink" onclick="openPage('about', this, '#6f7171' ), triggerOff()" id="defaultOpen">
+                        <div class="menuM-Item tabLink" onclick="openPage('about', this, '#7ED957' ), triggerOff()" id="defaultOpen">
                             <button id="buttonAbout"></button>
-                            <h3>A propos</h3>
+                                <h3>A propos</h3>
                         </div>
-                        <div class="menuM-Item tabLink" onclick="openPage('skills', this, '#6f7171'), triggerOff()">
+                        <div class="menuM-Item tabLink" onclick="openPage('skills', this, '#7ED957'), triggerOff()">
                             <button id="buttonSkills"></button>
                             <h3>Compétences</h3>
                         </div>
-                        <div class="menuM-Item tabLink" onclick="openPage('portfolio', this, '#6f7171'), triggerOff()">
+                        <div class="menuM-Item tabLink" onclick="openPage('portfolio', this, '#7ED957'), triggerOff()">
                             <button id="buttonPortfolio"></button>
                             <h3>Portefolio</h3>
                         </div>
-                        <div class="menuM-Item tabLink" onclick="openPage('experience', this, '#6f7171'), triggerOff()">
+                        <div class="menuM-Item tabLink" onclick="openPage('experience', this, '#7ED957'), triggerOff()">
                             <button id="buttonExperience"></button>
                             <h3>Expériences</h3>
                         </div>
-                        <div class="menuM-Item tabLink" onclick="openPage('contact', this, '#6f7171'), triggerOff()">
+                        <div class="menuM-Item tabLink" onclick="openPage('contact', this, '#7ED957'), triggerOff()">
                             <button id="buttonContact"></button>
                             <h3>Contact</h3>
                         </div>
@@ -87,19 +105,35 @@
             <!-- Skills -->
             <section id="skills" class="tabContent" style="display:none">
                 <h2>Compétences</h2>
+
+                <div>
+                    
+                </div>
             </section>
 
             <!-- Experiences -->
             <section id="experience" class="tabContent" style="display:none">
                 <h2>Expériences</h2>
+
+                <div>
+
+                </div>
             </section>
             <!-- Portfolio -->
             <section id="portfolio" class="tabContent" style="display:none">
                 <h2>Portefolio</h2>
+
+                <div>
+
+                </div>
             </section>
             <!-- contact -->
             <section id="contact" class="tabContent" style="display:none">
                 <h2>Contact</h2>
+
+                <div>
+
+                </div>
             </section>
         </main>
         <!-- Footer -->
@@ -133,12 +167,13 @@
                     tabLinks[i].style.backgroundColor = "";
                 }
 
+
                 document.getElementById(pageName).style.display = "block";
                 elmnt.style.backgroundColor = color;
             }
 
             // Get the element with id="defaultOpen" and click on it
-            // document.getElementById("defaultOpen").click();
+            document.getElementById("defaultOpen").click();
         </script>
         <!-- TriggerOff (Checkbox) -->
         <script>
