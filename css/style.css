@@ -363,7 +363,37 @@ main {
     width: 100%;
 }
 
+/* Skills */
 
+#skills {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+}
+
+
+/* Experience */
+
+#experience {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+}
+
+/* Portfolio */
+
+#portfolio {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* Contact */
+
+#contact {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+}
 
 /* Footer */
 
