@@ -425,6 +425,10 @@ footer {
 
 @media screen and (min-width: 685px) and (max-width: 1023px) {
 
+    .banniere h1 {
+        font-size: 5rem;
+    }
+
     .menuM-Item {
         margin: 1rem 1.5rem;
         width: 43%;
@@ -455,6 +459,10 @@ footer {
 
 
 @media screen and (min-width: 1024px) {
+
+    .banniere h1 {
+        font-size: 5.5rem;
+    }
 
     .menuMobile { 
         display: none;
