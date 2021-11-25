@@ -212,6 +212,7 @@ header {
     letter-spacing: 0.1rem;
     position: relative;
     top: 5px;
+    left: 15px;
 }
 
 
@@ -219,6 +220,7 @@ header {
     padding: 2.1rem;
     border-radius: 50%;
     border: solid 1px #002E2D;
+    background-color: #002E2D;
     background-repeat: no-repeat;
     background-size: 2.2rem;
     background-position-x: center;
@@ -371,6 +373,22 @@ main {
     background-color: #fff;
 }
 
+.skillsContent {
+    display: flex;
+    flex-flow: column;
+}
+
+.skillsLogo {
+    width: 90%;
+    margin: auto;
+}
+
+
+.skillsText {
+    width: 90%;
+    margin: auto;
+}
+
 
 /* Experience */
 
@@ -378,6 +396,24 @@ main {
     box-sizing: border-box;
     width: 100%;
     background-color: #fff;
+    padding-bottom: 20px;
+}
+
+#experience h3 {
+    font-family: 'AileronReg', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
+#experience p {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+.exp {
+    margin: auto;
+    width: 85%;
 }
 
 /* Portfolio */
@@ -444,8 +480,10 @@ footer {
     }
 
     .menuM-Item h3 {
-        font-size: 1.250rem;
+        font-size: 1rem;
+        left: 35px;
     }
+
 
 }
 
@@ -465,6 +503,12 @@ footer {
         align-self: center;
     }
 
+    .menuM-Item h3 {
+        font-size: 1.025rem;
+        left: 30px;
+    }
+
+
     .nav {
         display: flex;
         flex-flow: row wrap;
@@ -480,6 +524,19 @@ footer {
         top: 110px;
         left: 110px;
         width: 90px;
+    }
+
+    .skillsContent {
+        display: flex;
+        flex-flow: row;
+    }
+
+    .skillsLogo {
+        width: 50%;
+    }
+
+    .skillsText {
+        width: 50%;
     }
 }
 
