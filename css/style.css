@@ -400,6 +400,8 @@ main {
 .skillsContent {
     display: flex;
     flex-flow: column;
+    width: 90%;
+    margin: auto;
 }
 
 .skillsLogo {
@@ -413,6 +415,16 @@ main {
     margin: auto;
 }
 
+.skillsLang {
+    width: 90%;
+    margin: auto;
+}
+
+.skillsContent h3 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
 
 /* Experience */
 
@@ -423,7 +435,13 @@ main {
     padding-bottom: 20px;
 }
 
-#experience h3 {
+.exp h3 {
+    font-family: 'AileronReg', sans-serif;
+    font-size: 1.2rem;
+    padding: 10px 0px;
+}
+
+.training {
     font-family: 'AileronReg', sans-serif;
     font-size: 1.2rem;
     padding: 10px 0px;
@@ -435,9 +453,15 @@ main {
     padding-bottom: 5px;
 }
 
-.exp {
+.expContainer {
     margin: auto;
     width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+
+.exp_Title {
+    display: none;
 }
 
 /* Portfolio */
@@ -505,7 +529,7 @@ footer {
 
     .menuM-Item h3 {
         font-size: 1rem;
-        left: 35px;
+        left: 85px;
     }
 
 
@@ -529,7 +553,7 @@ footer {
 
     .menuM-Item h3 {
         font-size: 1.025rem;
-        left: 30px;
+        left: 75px;
     }
 
 
@@ -551,8 +575,7 @@ footer {
     }
 
     .skillsContent {
-        display: flex;
-        flex-flow: row;
+        flex-flow: row wrap;
     }
 
     .skillsLogo {
@@ -562,6 +585,58 @@ footer {
     .skillsText {
         width: 50%;
     }
+
+    .skillsLang {
+        width: 100%;
+    }
+
+    .exp {
+        width: 46%;
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 20px;
+        border-left: solid 5px #7ED957;
+    }
+
+    .training {
+        width: 46%;
+        align-self: flex-end;
+        padding-left: 20px;
+        box-sizing: border-box;
+        text-align: right;
+        padding-right: 20px;
+        border-right: solid 5px#7ED957;
+
+    }
+
+    .expContainer::after {
+        content: '';
+        width: 6px;
+        background-color: #7ED957;
+        position: absolute;
+        left: 50%;
+        top: 315px;
+        bottom: -335px;
+    }
+
+
+    .exp_Title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titleExp {
+        align-self: flex-start;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    .titleTraining {
+        align-self: flex-end;
+        width: 50%;
+        font-weight: bold;
+    }
+
 }
 
 
@@ -596,4 +671,74 @@ footer {
         font-size: 1.2rem;
     }
 
+
+    .skillsContent {
+        flex-flow: row wrap;
+    }
+
+    .skillsLogo {
+        width: 50%;
+    }
+
+    .skillsText {
+        width: 50%;
+    }
+
+    .skillsLang {
+        width: 100%;
+    }
+
+    .exp {
+        width: 46%;
+        align-self: flex-start;
+        text-align: left;
+        padding-left: 20px;
+        border-left: solid 5px #7ED957;
+    }
+
+    .training {
+        width: 46%;
+        align-self: flex-end;
+        padding-left: 20px;
+        box-sizing: border-box;
+        text-align: right;
+        padding-right: 20px;
+        border-right: solid 5px#7ED957;
+
+    }
+
+    .expContainer::after {
+        content: '';
+        width: 6px;
+        background-color: #7ED957;
+        position: absolute;
+        left: 50%;
+        top: 365px;
+        bottom: -155px;
+    }
+
+    .exp_Title {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .titleExp {
+        align-self: flex-start;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    .titleTraining {
+        align-self: flex-end;
+        width: 50%;
+        font-weight: bold;
+    }
+
+    .titleExp h3 {
+        font-size: 1.5rem;
+    }
+
+    .titleTraining h3 {
+        font-size: 1.5rem;
+    }
 }
