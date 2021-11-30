@@ -159,7 +159,7 @@ header {
 }
 
 .navigationCheckbox:checked ~ .navigationBg {
-    transform: scale(30);
+    transform: scale(40);
 }
 
 .navigationCheckbox:checked ~ .nav {
@@ -274,7 +274,7 @@ header {
 
 .frEnSwitch {
     position: relative;
-    top: 136px;
+    top: 110px;
     left: 12%;
     width: 90px;
 }
