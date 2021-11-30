@@ -207,11 +207,9 @@ header {
     color: #fff;
     box-sizing: border-box;
     margin: auto;
-    width: 50%;
+    width: 105%;
     text-align: center;
     letter-spacing: 0.1rem;
-    position: relative;
-    left: 70px;
 }
 
 
@@ -277,7 +275,7 @@ header {
 .frEnSwitch {
     position: relative;
     top: 50px;
-    left: 150px;
+    left: 40%;
     width: 90px;
 }
 
@@ -519,9 +517,9 @@ footer {
     display: none;
 }
 
-/* Big phone 425 -> 684 */
+/* Big phone 425px -> 767px */
 
-@media screen and (min-width: 425px) and (max-width: 684px) {
+@media screen and (min-width: 425px) and (max-width: 767px) {
 
     .banniere h1 {
         font-size: 4.5rem;
@@ -529,7 +527,6 @@ footer {
 
     .menuM-Item h3 {
         font-size: 1rem;
-        left: 85px;
     }
 
 
@@ -537,9 +534,9 @@ footer {
 
 
 
-/* TABLETTE TEST 685px -> 1023px */
+/* TABLETTE TEST 768px -> 1023px */
 
-@media screen and (min-width: 685px) and (max-width: 1023px) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
 
     .banniere h1 {
         font-size: 5rem;
@@ -553,7 +550,6 @@ footer {
 
     .menuM-Item h3 {
         font-size: 1.025rem;
-        left: 75px;
     }
 
 
@@ -616,7 +612,8 @@ footer {
         position: absolute;
         left: 50%;
         top: 315px;
-        bottom: -335px;
+        bottom: -390px;
+
     }
 
 
@@ -714,7 +711,8 @@ footer {
         position: absolute;
         left: 50%;
         top: 365px;
-        bottom: -155px;
+        bottom: 0px;
+        max-height: 600px;
     }
 
     .exp_Title {
