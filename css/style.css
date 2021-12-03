@@ -385,7 +385,7 @@ main {
 
 #textAbout {
     width: 100%;
-    min-height: 300px;
+    min-height: 250px;
     margin: auto;
 }
 
@@ -476,27 +476,35 @@ main {
 
 .titleButton {
     width: 90%;
-    border-radius: 20px;
+    border-radius: 40px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+    height: 40px;
+    border: 4px solid #7ED957;
 }
 
 .titleExp {
     width: 50%;
+    font-size: 1.3rem;
     background-color:#002E2D;
     box-sizing: border-box;
-    padding: 5px 10px;
     display: inline-block;
+    padding: 8px 10px 8px 15px;
+    border: 1px solid #002E2D;
+    border-radius: 20px 0 0 20px;
 }
 
 .titleTraining {
     width: 50%;
+    font-size: 1.3rem;
     background-color: #002E2D;
     box-sizing: border-box;
-    padding: 5px 10px;
     display: inline-block;
+    padding: 8px 10px 8px 15px;
+    border: 1px solid #002E2D;
+    border-radius: 0 20px 20px 0;
 }
 
 
@@ -542,12 +550,12 @@ main {
 
 /* 1000 - 96 /5 =~306 
     1500 - 96 + */
-.r1{top:40px;}
-.r2{top:340px;}
-.r3{top:40px;}
-.r4{top:340px;}
-.r5{top:640px;}
-.r6{top:640px;}
+.r1{top:60px;}
+.r2{top:360px;}
+.r3{top:60px;}
+.r4{top:360px;}
+.r5{top:660px;}
+.r6{top:660px;}
 
 .box {
     width: 250px;
@@ -564,27 +572,27 @@ main {
 }
 
 .b1 {
-    top: 80px;
+    top: 100px;
 }
 
 .b2 {
-    top: 380px;
+    top: 400px;
 }
 
 .b3 {
-    top: 80px;
+    top: 100px;
 }
 
 .b4 {
-    top: 380px;
+    top: 400px;
 }
 
 .b5 {
-    top: 680px;
+    top: 700px;
 }
 
 .b6 {
-    top: 680px;
+    top: 700px;
 }
 
 
@@ -613,7 +621,30 @@ main {
 
 .contactContent {
     min-height: 300px;
-    margin: auto;
+    margin: 0 auto;
+    width: 90%;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contactContent h3 {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.contactLogo {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.contactLogoEnd {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 8px;
+    margin: 0 auto;
 }
 
 /* Footer */
@@ -746,27 +777,27 @@ footer {
 
 
     .b1 {
-        top: 80px;
+        top: 100px;
         left: calc(50% - 200px)
     }
     .b2 {
-        top: 380px;
-        left: calc(50% - 200px)
+        top: 400px;
+        left: calc(50% + 200px)
     }
     .b3 {
-        top: 680px;
+        top: 100px;
         left: calc(50% + 200px)
     }
     .b4 {
-        top: 980px;
-        left: calc(50% + 200px)
+        top: 400px;
+        left: calc(50% - 200px)
     }
     .b5 {
-        top: 1280px;
+        top: 700px;
         left: calc(50% + 200px)
     }
     .b6 {
-        top: 1580px;
+        top: 700px;
         left: calc(50% - 200px)
     }
 
@@ -837,27 +868,27 @@ footer {
     }
 
     .b1 {
-        top: 80px;
+        top: 100px;
         left: calc(50% - 280px)
     }
     .b2 {
-        top: 380px;
-        left: calc(50% - 280px)
+        top: 400px;
+        left: calc(50% + 280px)
     }
     .b3 {
-        top: 680px;
+        top: 100px;
         left: calc(50% + 280px)
     }
     .b4 {
-        top: 980px;
-        left: calc(50% + 280px)
+        top: 400px;
+        left: calc(50% - 280px)
     }
     .b5 {
-        top: 1280px;
+        top: 700px;
         left: calc(50% + 280px)
     }
     .b6 {
-        top: 1580px;
+        top: 700px;
         left: calc(50% - 280px)
     }
 }
