@@ -461,23 +461,42 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
-    height: 1880px;
+    height: 980px;
 }
 
 .exp_Title {
-    display: none;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.titleButton {
+    width: 90%;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
 }
 
 .titleExp {
-    align-self: flex-start;
     width: 50%;
-    font-weight: bold;
+    background-color:#002E2D;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    display: inline-block;
 }
 
 .titleTraining {
-    align-self: flex-end;
     width: 50%;
-    font-weight: bold;
+    background-color: #002E2D;
+    box-sizing: border-box;
+    padding: 5px 10px;
+    display: inline-block;
 }
 
 
@@ -498,11 +517,10 @@ main {
 }
 
 .ligne {
-    height: 1580px;
+    height: 880px;
     width: 8px;
-    margin: 0 auto;
+    margin: 0px auto;
     background: #7ED957;
-    border-radius: 5px;
 }
 
 .rond {
@@ -518,22 +536,22 @@ main {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    color: ivory;
+    color: #FFFFFF;
 }
 
 
 /* 1000 - 96 /5 =~306 
     1500 - 96 + */
-.r1{top:80px;}
-.r2{top:380px;}
-.r3{top:680px;}
-.r4{top:980px;}
-.r5{top:1280px;}
-.r6{top:1580px;}
+.r1{top:40px;}
+.r2{top:340px;}
+.r3{top:40px;}
+.r4{top:340px;}
+.r5{top:640px;}
+.r6{top:640px;}
 
 .box {
     width: 250px;
-    min-height: 110px;
+    min-height: 190px;
     padding: 20px;
     border-radius: 10px;
     height: auto;
@@ -554,19 +572,19 @@ main {
 }
 
 .b3 {
-    top: 680px;
+    top: 80px;
 }
 
 .b4 {
-    top: 980px;
+    top: 380px;
 }
 
 .b5 {
-    top: 1280px;
+    top: 680px;
 }
 
 .b6 {
-    top: 1580px;
+    top: 680px;
 }
 
 
@@ -722,11 +740,6 @@ footer {
     }
 
 
-    .exp_Title {
-        display: flex;
-        flex-direction: row;
-    }
-
     .box {
         width: 280px;
     }
@@ -808,12 +821,6 @@ footer {
         width: 100%;
     }
 
-
-
-    .exp_Title {
-        display: flex;
-        flex-direction: row;
-    }
 
 
     .titleExp h3 {
