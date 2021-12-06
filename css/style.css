@@ -492,10 +492,14 @@ main {
     font-size: 1.3rem;
     background-color:#002E2D;
     box-sizing: border-box;
-    display: inline-block;
-    padding: 8px 10px 8px 15px;
     border: 1px solid #002E2D;
     border-radius: 20px 0 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.titleExp h3 {
+    align-self: center;
 }
 
 .titleTraining {
@@ -503,12 +507,15 @@ main {
     font-size: 1.3rem;
     background-color: #002E2D;
     box-sizing: border-box;
-    display: inline-block;
-    padding: 8px 10px 8px 15px;
     border: 1px solid #002E2D;
     border-radius: 0 20px 20px 0;
+    display: flex;
+    justify-content: center;
 }
 
+.titleTraining h3 {
+    align-self: center;
+}
 
 .exp {
     align-self: flex-start;
@@ -554,10 +561,10 @@ main {
     1500 - 96 + */
 .r1{top:60px;}
 .r2{top:360px;}
-.r3{top:60px;}
-.r4{top:360px;}
+.r3{top:660px;}
+/* .r4{top:360px;}
 .r5{top:660px;}
-.r6{top:660px;}
+.r6{top:660px;} */
 
 .box {
     width: 250px;
@@ -571,7 +578,9 @@ main {
     left: calc(50% - 0px);
     transform: translate(-50%);
     color: #fff;
+    transition: opacity 400ms 1s ease-out;
 }
+
 
 .b1 {
     top: 100px;
@@ -582,10 +591,10 @@ main {
 }
 
 .b3 {
-    top: 100px;
+    top: 700px;
 }
 
-.b4 {
+/* .b4 {
     top: 400px;
 }
 
@@ -595,7 +604,7 @@ main {
 
 .b6 {
     top: 700px;
-}
+} */
 
 
 .box p {
@@ -625,12 +634,13 @@ main {
 #contact h2 {
     font-size: 1.2rem;
     line-height: 1.4rem;
+
 }
 
 .contactContent {
     min-height: 300px;
     margin: 0 auto;
-    width: 90%;
+    width: 70%;
     display: flex;
     flex-flow: row wrap;
 }
@@ -705,6 +715,15 @@ footer {
 
     .menuM-Item h3 {
         font-size: 1rem;
+    }
+
+    .box {
+        width: 300px;
+    }
+    
+    #contact h2 {
+        font-size: 1.6rem;
+        line-height: 1.8rem;
     }
 
 
@@ -784,31 +803,33 @@ footer {
     }
 
 
-    .b1 {
+    #expContent .b1 {
         top: 100px;
         left: calc(50% - 200px)
     }
-    .b2 {
+    #expContent .b2 {
         top: 400px;
         left: calc(50% + 200px)
     }
-    .b3 {
+
+    #expContent .b3 {
+        top: 700px;
+        left: calc(50% - 200px)
+    }
+    
+    #trainingContent .b1 {
         top: 100px;
         left: calc(50% + 200px)
     }
-    .b4 {
+    #trainingContent .b2 {
         top: 400px;
-        left: calc(50% - 200px)
-    }
-    .b5 {
-        top: 700px;
-        left: calc(50% + 200px)
-    }
-    .b6 {
-        top: 700px;
         left: calc(50% - 200px)
     }
 
+    #trainingContent .b3 {
+        top: 700px;
+        left: calc(50% + 200px)
+    }
 }
 
 
@@ -875,28 +896,31 @@ footer {
         width: 350px;
     }
 
-    .b1 {
+    #expContent .b1 {
         top: 100px;
         left: calc(50% - 280px)
     }
-    .b2 {
+    #expContent .b2 {
         top: 400px;
         left: calc(50% + 280px)
     }
-    .b3 {
+
+    #expContent .b3 {
+        top: 700px;
+        left: calc(50% - 280px)
+    }
+    
+    #trainingContent .b1 {
         top: 100px;
         left: calc(50% + 280px)
     }
-    .b4 {
+    #trainingContent .b2 {
         top: 400px;
         left: calc(50% - 280px)
     }
-    .b5 {
+
+    #trainingContent .b3 {
         top: 700px;
         left: calc(50% + 280px)
-    }
-    .b6 {
-        top: 700px;
-        left: calc(50% - 280px)
     }
 }

@@ -55,3 +55,15 @@ function ExpPage(pageName,elmnt,color) {
 }
 
 document.getElementById("defaultOpenExp").click();
+
+
+
+
+
+
+
+
+
+
+
+// Alors on sait 
