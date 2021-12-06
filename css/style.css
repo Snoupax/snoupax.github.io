@@ -365,9 +365,11 @@ main {
     text-align: center;
     background-color: #fff;
     color: #002E2D;
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding-bottom: 1rem;
     padding-top: 1rem;
+    width: 90%;
+    margin: 0 auto;
 }
 
 #textAbout p {
@@ -607,6 +609,7 @@ main {
 #portfolio {
     box-sizing: border-box;
     width: 100%;
+    background-color: #fff;
 }
 
 
@@ -617,6 +620,11 @@ main {
     box-sizing: border-box;
     width: 100%;
     background-color: #fff;
+}
+
+#contact h2 {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
 }
 
 .contactContent {
