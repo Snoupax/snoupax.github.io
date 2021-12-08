@@ -39,7 +39,7 @@ header {
 
 .banniere h1 {
     font-size: 3.5rem;
-    padding: 0.5rem 0.5rem;
+    padding: 0 1rem;
     font-family: 'Lato', sans-serif;
 }
 
@@ -405,29 +405,110 @@ main {
     width: 90%;
     margin: auto;
     min-height: 300px;
-    padding: 30px 0 20px 0;
+    padding: 0px 0 30px 0;
 }
 
-.skillsLogo {
+/* Programmation */
+
+.prog-card {
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.skills-prog-container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.skills-prog-container h3 {
+    box-sizing: border-box;
+    padding: 20px 0px;
+    color: #002E2D;
+    font-family: 'Lato', sans-serif;
+}
+
+.skills-logo-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.logo-container {
+    width: 30%;
+    /* height: 80px; */
+    align-self: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.skill-logo {
+    width: 56px;
+    max-height: 65px;
+}
+
+
+/* DESIGN */
+
+.design-card {
+    width: 90%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.skills-design-container {
     width: 90%;
     margin: auto;
+    
 }
 
-
-.skillsText {
-    width: 90%;
-    margin: auto;
+.skills-design-container h3 {
+    box-sizing: border-box;
+    padding: 20px 0px;
+    color: #002E2D;
+    font-family: 'Lato', sans-serif;
 }
 
-.skillsLang {
-    width: 90%;
-    margin: auto;
-}
 
 .skillsContent h3 {
     font-weight: bold;
     font-size: 1.3rem;
 }
+
+
+/* Portfolio */
+
+#portfolio {
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+}
+
+.grid-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.grid-item {
+    width: 30%;
+    box-sizing: border-box;
+    padding: 1rem;
+}
+
+.grid-img {
+    width: 100%;
+}
+
+
 
 
 /* Experience */
@@ -613,13 +694,7 @@ main {
     margin: 4px 0 8px 0;
 }
 
-/* Portfolio */
 
-#portfolio {
-    box-sizing: border-box;
-    width: 100%;
-    background-color: #fff;
-}
 
 
 
@@ -961,12 +1036,12 @@ footer {
         width: 50%;
     }
 
-    .skillsText {
-        width: 50%;
+    .prog-card {
+        width: 60%;
     }
 
-    .skillsLang {
-        width: 100%;
+    .design-card {
+        width: 60%;
     }
 
 
@@ -1055,6 +1130,7 @@ footer {
         width: 71%;
         text-align: center;
         color: #fff;
+        font-family: 'AileronReg', sans-serif;
     }
 
     .contactLogoL p {
@@ -1068,6 +1144,7 @@ footer {
         width: 71%;
         text-align: center;
         color: #fff;
+        font-family: 'AileronReg', sans-serif;
     }
 
     .contactLogoR {
