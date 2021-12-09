@@ -67,7 +67,7 @@ header {
     box-sizing: border-box;
     border: solid 2px #fff;
     background-color: #002E2D;
-    border-radius: 20px;
+    border-radius: 5px;
     margin-bottom: 1rem;
     padding: 0.5rem 1rem;
     font-size: 1.3rem;
@@ -104,7 +104,7 @@ header {
     position: fixed;
     bottom: 1rem;
     right: 1rem;
-    border-radius: 50%;
+    border-radius: 5px;
     z-index: 2001;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -197,7 +197,7 @@ header {
     box-sizing: border-box;
     margin: 0.5rem 2.5rem;
     width: 80%;
-    border-radius: 100px;
+    border-radius: 5px;
     border: solid 2px #7ED957;
     background-color: #002E2D;
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
@@ -566,7 +566,7 @@ main {
 
 .titleButton {
     width: 90%;
-    border-radius: 40px;
+    border-radius: 5px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
@@ -581,7 +581,7 @@ main {
     background-color:#002E2D;
     box-sizing: border-box;
     border: 1px solid #002E2D;
-    border-radius: 20px 0 0 20px;
+    border-radius: 5px 0 0 5px;
     display: flex;
     justify-content: center;
 }
@@ -596,7 +596,7 @@ main {
     background-color: #002E2D;
     box-sizing: border-box;
     border: 1px solid #002E2D;
-    border-radius: 0 20px 20px 0;
+    border-radius: 0 5px 5px 0;
     display: flex;
     justify-content: center;
 }
@@ -658,7 +658,7 @@ main {
     width: 250px;
     min-height: 190px;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 5px;
     height: auto;
     background:#002E2D;
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.4);
@@ -768,6 +768,7 @@ main {
 footer {
     max-width: 1280px;
     margin: auto;
+    background: linear-gradient(240deg, #7ED957,#002E2D);
 }
 
 .footer {
@@ -776,7 +777,7 @@ footer {
 
 .copyright {
     color: #fff;
-    margin: 10px 0;
+    margin: 0 auto;
     padding-top: 10px;
     border-top: 2px solid #7ED957;
     font-size: 14px;
@@ -988,7 +989,7 @@ footer {
         background-color: #002E2D;
         box-sizing: border-box;
         padding: 20px 25px;
-        border-radius: 100px 0px 0px 100px;
+        border-radius: 5px 0px 0px 5px;
         position: relative;
         left: 20px;
         z-index: 1000;
@@ -1003,7 +1004,7 @@ footer {
         background-color: #002E2D;
         box-sizing: border-box;
         padding: 20px 25px;
-        border-radius: 0 100px 100px 0;
+        border-radius: 0 5px 5px 0;
         position: relative;
         right: 20px;
         z-index: 1000;
@@ -1183,7 +1184,7 @@ footer {
         background-color: #002E2D;
         box-sizing: border-box;
         padding: 20px 25px;
-        border-radius: 100px 0px 0px 100px;
+        border-radius: 5px 0px 0px 5px;
         position: relative;
         left: 20px;
         z-index: 1000;
@@ -1199,7 +1200,7 @@ footer {
         background-color: #002E2D;
         box-sizing: border-box;
         padding: 20px 25px;
-        border-radius: 0 100px 100px 0;
+        border-radius: 0 5px 5px 0;
         position: relative;
         right: 20px;
         z-index: 1000;
