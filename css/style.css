@@ -37,9 +37,14 @@ header {
     text-align: center;
 }
 
+#textScramble {
+    max-height:88px; 
+    overflow: hidden;
+}
+
 .banniere h1 {
     font-size: 3.5rem;
-    padding: 0 1rem;
+    padding: 1rem 0;
     font-family: 'Lato', sans-serif;
 }
 
@@ -375,6 +380,7 @@ main {
 #textAbout p {
     width: 80%;
     font-family: 'AileronReg', sans-serif;
+    font-weight: 500;
     background-color: #fff;
     color: #002E2D;
     box-sizing: border-box;
@@ -412,7 +418,7 @@ main {
 
 .prog-card {
     width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 -1px 19px 0 rgba(0,0,0,0.2);
     margin: 0 auto;
     margin-bottom: 30px;
     text-align: center;
@@ -458,7 +464,7 @@ main {
 
 .design-card {
     width: 90%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 -1px 19px 0 rgba(0,0,0,0.2);
     margin: 0 auto;
     text-align: center;
 }
@@ -496,10 +502,11 @@ main {
     flex-flow: row wrap;
     justify-content: center;
     padding-bottom: 30px;
+    align-items: center;
 }
 
 .grid-item {
-    width: 30%;
+    width: 90%;
     box-sizing: border-box;
     padding: 1rem;
 }
@@ -800,9 +807,16 @@ footer {
 
 @media screen and (min-width: 425px) and (max-width: 767px) {
 
+    #textScramble {
+        max-height: 104px;
+        overflow: hidden;
+    }
+
     .banniere h1 {
         font-size: 4.5rem;
     }
+
+
 
     .menuM-Item h3 {
         font-size: 1rem;
@@ -833,6 +847,12 @@ footer {
 /* TABLETTE TEST 768px -> 1023px */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+
+
+    #textScramble {
+        max-height: 112px;
+        overflow: hidden;
+    }
 
     .banniere h1 {
         font-size: 5rem;
@@ -880,6 +900,16 @@ footer {
 
     }
 
+    #textAbout {
+        padding-bottom: 40px;
+        
+    }
+
+    #textAbout p {
+        padding: 30px 20px;
+        box-shadow: 0 -1px 19px 0 rgba(0,0,0,0.2);
+    }
+
     .skillsContent {
         flex-flow: row wrap;
     }
@@ -888,12 +918,18 @@ footer {
         width: 50%;
     }
 
-    .skillsText {
-        width: 50%;
+    .prog-card {
+        width: 75%;
     }
 
-    .skillsLang {
-        width: 100%;
+    .design-card {
+        width: 75%;
+    }
+
+    .grid-item {
+        width: 45%;
+        box-sizing: border-box;
+        padding: 1rem;
     }
 
 
@@ -932,7 +968,7 @@ footer {
 
     #contact h2 {
         font-size: 1.8rem;
-        line-height: 2rem;
+        line-height: 2.2rem;
     }
 
     .contactLogoR p, .contactLogoL p {
@@ -960,6 +996,7 @@ footer {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
+        border: 5px solid #7ED957;
     }
 
     .contactLogoL p {
@@ -974,6 +1011,7 @@ footer {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
+        border: 5px solid #7ED957;
     }
 
     .contactLogoR {
@@ -1002,6 +1040,12 @@ footer {
 
 @media screen and (min-width: 1024px) {
 
+
+    #textScramble {
+        max-height: 120px;
+        overflow: hidden;
+    }
+
     .banniere h1 {
         font-size: 5.5rem;
     }
@@ -1027,6 +1071,16 @@ footer {
         font-size: 1.2rem;
     }
 
+    #textAbout {
+        padding-bottom: 40px;
+        
+    }
+
+    #textAbout p {
+        padding: 30px 20px;
+        box-shadow: 0 -1px 19px 0 rgba(0,0,0,0.2);
+    }
+
 
     .skillsContent {
         flex-flow: row wrap;
@@ -1044,6 +1098,12 @@ footer {
         width: 60%;
     }
 
+
+    .grid-item {
+        width: 30%;
+        box-sizing: border-box;
+        padding: 1rem;
+    }
 
 
     .titleExp h3 {
@@ -1108,7 +1168,7 @@ footer {
 
     #contact h2 {
         font-size: 1.9rem;
-        line-height: 2rem;
+        line-height: 2.3rem;
     }
 
     .contactContent {
@@ -1131,6 +1191,8 @@ footer {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
+        border: 5px solid #7ED957;
+        font-weight: bold;
     }
 
     .contactLogoL p {
@@ -1145,6 +1207,8 @@ footer {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
+        border: 5px solid #7ED957;
+        font-weight: bold;
     }
 
     .contactLogoR {
