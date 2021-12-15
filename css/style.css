@@ -418,6 +418,7 @@ main {
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    min-height: 250px;
 }
 
 .hobbies h3 {
@@ -470,13 +471,14 @@ main {
     width: 90%;
     box-shadow: 0 -1px 19px 0 rgba(0,0,0,0.2);
     margin: 0 auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
 .skills-prog-container {
     width: 90%;
     margin: 0 auto;
+    min-height: 250px;
 }
 
 
@@ -523,6 +525,7 @@ main {
 .skills-design-container {
     width: 90%;
     margin: auto;
+    min-height: 250px;
     
 }
 
@@ -1150,13 +1153,6 @@ footer hr {
     .menu-Item h3 {
         font-family: 'Lato', sans-serif;
         font-size: 1.2rem;
-    }
-
-
-
-    #textAbout {
-        padding-bottom: 40px;
-        
     }
 
     #textAbout p {
