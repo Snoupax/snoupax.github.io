@@ -443,6 +443,7 @@ main {
 
 .hobbies-img {
     width: 56px;
+    max-height: 65px;
 }
 
 
