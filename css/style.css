@@ -443,7 +443,7 @@ main {
 
 .hobbies-img {
     width: 56px;
-    max-height: 65px;
+    height: 56px;
 }
 
 
@@ -502,6 +502,7 @@ main {
     align-self: center;
     text-align: center;
     box-sizing: border-box;
+    padding: 10px 0;
 }
 
 .skill-logo {
@@ -807,6 +808,7 @@ main {
 
 .contactLogoR p, .contactLogoL p {
     display: none;
+    
 }
 
 .imgLogo {
@@ -1071,6 +1073,7 @@ footer hr {
         color: #fff;
         font-family: 'AileronReg', sans-serif;
         border: 5px solid #7ED957;
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
     }
 
     .contactLogoL p {
@@ -1086,6 +1089,7 @@ footer hr {
         color: #fff;
         font-family: 'AileronReg', sans-serif;
         border: 5px solid #7ED957;
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
     }
 
     .contactLogoR {
@@ -1281,6 +1285,7 @@ footer hr {
         font-family: 'AileronReg', sans-serif;
         border: 5px solid #7ED957;
         font-weight: bold;
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
     }
 
     .contactLogoL p {
@@ -1297,6 +1302,7 @@ footer hr {
         font-family: 'AileronReg', sans-serif;
         border: 5px solid #7ED957;
         font-weight: bold;
+        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
     }
 
     .contactLogoR {
