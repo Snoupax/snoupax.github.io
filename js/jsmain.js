@@ -66,8 +66,9 @@ document.getElementById("defaultOpenExp").click();
 
 
 
-// Alors on sait 
+// Date ?
 
+document.getElementById("year").innerHTML = new Date().getFullYear();
 
 
   
