@@ -223,13 +223,13 @@ header {
     background-color: #002E2D;
     background-repeat: no-repeat;
     background-size: 1.8rem;
-    background-position-x: 20px;
+    background-position-x: 24px;
     background-position-y: center;
     padding: 1.5rem;
 }
 
 .item-Skills {
-    background-image: url(../img/);
+    background-image: url(../img/skills.svg);
     border: solid 1px #002E2D;
     background-color: #002E2D;
     background-repeat: no-repeat;
@@ -427,6 +427,7 @@ main {
     font-weight: bold;
     font-family: 'Lato', sans-serif;
     padding: 1.5rem 0;
+    color: #002E2D;
 }
 
 .grid-hobbies {
@@ -715,6 +716,9 @@ main {
     transform: translate(-50%);
     color: #fff;
     transition: opacity 400ms 1s ease-out;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 
