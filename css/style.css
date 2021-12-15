@@ -96,6 +96,103 @@ header {
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
 }
 
+/* Button Nav Mobile */
+
+.hamburger {
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+}
+
+.hamburger .bar {
+    padding: 0;
+    width: 30px;
+    height: 4px;
+    background-color: #7ED957;
+    display: block;
+    border-radius: px;
+    transition: all 0.4s ease-in-out;
+    position: absolute; 
+}
+
+.bar1 {
+    top: 0;
+}
+
+.bar2,
+.bar3 {
+    top: 13.5px;
+}
+
+.bar3 {
+    right: 0;
+}
+
+.bar4 {
+    bottom: 0;
+}
+
+
+.bar2, .bar3, .nav-icon .bar4 {
+    top: 13.5px;
+}
+
+.nav-icon .bar5 {
+    bottom: -2px;
+}
+
+.nav-icon .bar {
+    transition: all 0.4s ease-in-out, transform 0.4s ease-in-out 0.4s;
+}
+
+.nav-icon .bar2 {
+    width: 1px;
+    transform: rotate(90deg);
+    left: 13.5px;
+}
+
+.nav-icon .bar3 {
+    width: 1px;
+    left: 13.5px;
+    
+}
+
+.navigationCheckbox:checked + label > .nav-icon > .bar1{
+    top: 13.5px;
+    background-color: transparent;
+}
+
+.navigationCheckbox:checked + label > .nav-icon > .bar2{
+    left: 0px;
+    width: 30px;
+    transform: rotate(45deg);
+}
+
+.navigationCheckbox:checked + label > .nav-icon > .bar3{
+    left: 0;
+    width: 30px;
+    transform: rotate(-45deg);
+}
+
+.navigationCheckbox:checked + label > .nav-icon > .bar4{
+    background-color: transparent;
+}
+
+.navigationCheckbox:checked + label > .nav-icon > .bar5{
+    bottom: 13.5px;
+    background-color: transparent; 
+}
+  
+  
+  
+  
+  
+ 
+
+
+
 .navigationButton {
     background-color: #002E2D;
     height: 4rem;
@@ -133,6 +230,9 @@ header {
     transition: all .2s;
 }
 
+
+
+
 .navigationIcon::before {
     top: -.8rem;
 }
@@ -140,6 +240,9 @@ header {
 .navigationIcon::after {
     top: .8rem;
 }
+
+
+
 
 .nav {
     height: 100vh;
