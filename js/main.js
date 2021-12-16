@@ -26,6 +26,7 @@ document.getElementById("defaultOpen").click();
 
 
 // Trigger Off for nav Mobile 
+// Close the menu mobile
 function triggerOff(){
     document.getElementById('navi').checked = false;
     }
