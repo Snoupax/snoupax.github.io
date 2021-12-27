@@ -90,6 +90,7 @@ header {
     letter-spacing: 1px;
     overflow: hidden;
     font-family: 'Lato', sans-serif;
+    box-shadow: 0 0 3px;
     border-radius: 5px;
     font-weight: bold;
 }
@@ -97,7 +98,7 @@ header {
 #btnCV:hover {
     background: #fff;
     color: #002E2D;
-    box-shadow: 0 0 5px #fff, 0 0 25px #fff, 0 0 50px #fff, 0 0 200px #fff;
+    box-shadow: 0 0 5px #fff, 0 0 25px #fff;
 }
 
 #btnCV:nth-child(1) {
