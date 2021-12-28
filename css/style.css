@@ -622,13 +622,13 @@ main {
     font-size: 1.2rem;
     line-height: 2rem;
     margin: auto;
+    min-height: 250px;
 }
 
 #textAbout {
     width: 100%;
-    min-height: 250px;
     margin: auto;
-    margin-bottom: 30px;
+    margin-bottom: 60px;
 }
 
 .hobbies {
@@ -1375,10 +1375,6 @@ footer hr {
     .menu-Item h3 {
         font-family: 'Lato', sans-serif;
         font-size: 1.2rem;
-    }
-
-    #textAbout {
-        padding-bottom: 30px;
     }
 
     #textAbout p {
