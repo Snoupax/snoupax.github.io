@@ -33,7 +33,7 @@ header {
 /* Banniere */
 .banniere {
     background: rgb(0,46,45);
-background: linear-gradient(14deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, rgba(0,46,45,1) 75%);
+background: linear-gradient(21deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, rgba(0,46,45,1) 75%);
     color: #fff;
     text-align: center;
 }
@@ -1043,7 +1043,7 @@ main {
 footer {
     width: 100%;
     background: rgb(0,46,45);
-background: linear-gradient(346deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, rgba(0,46,45,1) 75%);
+background: linear-gradient(345deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, rgba(0,46,45,1) 75%);
     min-height: 200px;
 }
 
@@ -1428,6 +1428,12 @@ footer hr {
         font-size: 1.5rem;
     }
 
+    .titleTraining:hover, .titleExp:hover {
+        background: #7ED957;
+        color: #002E2D;
+
+    }
+
 
     .box {
         width: 350px;
@@ -1535,9 +1541,19 @@ footer hr {
         align-items: center;
     }
 
+    .imgLogo:hover {
+        transform: scale(1.25);
+    }
+
     .imgLogo {
         width: 100px;
         height: 100px;
         z-index: 1100;
+    }
+
+    .contact-hover:hover {
+        background: #fff;
+        color: #002E2D;
+        box-shadow: 0 0 5px #002E2D;
     }
 }
