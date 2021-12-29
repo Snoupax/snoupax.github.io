@@ -120,7 +120,8 @@ background: linear-gradient(21deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, 
     width: 100%;
     height: 2px;
     background: linear-gradient(90deg, transparent, #fff);
-    animation: animate1 1.2s linear infinite;
+    animation: animate1 1.5s linear infinite;
+    animation-delay: 0.30s;
 }
 
 @keyframes animate1 {
@@ -138,8 +139,8 @@ background: linear-gradient(21deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, 
     width: 2px;
     height: 100%;
     background: linear-gradient(100deg, transparent, #fff);
-    animation: animate2 1.2s linear infinite;
-    animation-delay: 0.30s;
+    animation: animate2 1.5s linear infinite;
+    animation-delay: 0.60s;
 }
 
 @keyframes animate2 {
@@ -157,8 +158,8 @@ background: linear-gradient(21deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, 
     width: 100%;
     height: 2px;
     background: linear-gradient(270deg, transparent, #fff);
-    animation: animate3 1.2s linear infinite;
-    animation-delay: 0.6s;
+    animation: animate3 1.5s linear infinite;
+    animation-delay: 0.9s;
 }
 
 @keyframes animate3 {
@@ -176,8 +177,8 @@ background: linear-gradient(21deg, rgba(0,46,45,1) 25%, rgba(121,210,84,1) 50%, 
     width: 2px;
     height: 100%;
     background: linear-gradient(360deg, transparent, #fff);
-    animation: animate4 1.2s linear infinite;
-    animation-delay: 0.90s;
+    animation: animate4 1.5s linear infinite;
+    animation-delay: 1.20s;
 }
 
 @keyframes animate4 {
@@ -1297,7 +1298,7 @@ footer hr {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
-        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
     }
 
     .contactLogoL p {
@@ -1312,7 +1313,7 @@ footer hr {
         text-align: center;
         color: #fff;
         font-family: 'AileronReg', sans-serif;
-        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
     }
 
     
@@ -1477,10 +1478,6 @@ footer hr {
         align-items: center;
     }
 
-    .imgLogo {
-        width: 100px;
-        height: 100px;;
-    }
 
     #contact h2 {
         font-size: 1.9rem;
@@ -1508,7 +1505,7 @@ footer hr {
         color: #fff;
         font-family: 'AileronReg', sans-serif;
         font-weight: bold;
-        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
     }
 
     .contactLogoL p {
@@ -1524,7 +1521,7 @@ footer hr {
         color: #fff;
         font-family: 'AileronReg', sans-serif;
         font-weight: bold;
-        box-shadow: 0 10px 15px rgb(0 0 0 / 20%);
+        box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
     }
 
     .contactLogoR {
@@ -1533,12 +1530,8 @@ footer hr {
     }
 
     .contactLogoL {
-        justify-content: flex-start;
+        justify-content: flex-end;
         align-items: center;
-    }
-
-    .imgLogo:hover {
-        transform: scale(1.25);
     }
 
     .imgLogo {
@@ -1547,9 +1540,16 @@ footer hr {
         z-index: 1100;
     }
 
+    .imgLogo:hover {
+        transform: scale(1.25);
+    }
+
     .contact-hover:hover {
         background: #fff;
         color: #002E2D;
         box-shadow: 0 0 5px #002E2D;
     }
+
+    
+
 }
