@@ -1524,16 +1524,6 @@ footer hr {
         box-shadow: 0 10px 15px rgb(0 0 0 / 50%);
     }
 
-    .contactLogoR {
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    .contactLogoL {
-        justify-content: flex-end;
-        align-items: center;
-    }
-
     .imgLogo {
         width: 100px;
         height: 100px;
