@@ -58,8 +58,28 @@ function ExpPage(pageName,elmnt,color) {
 document.getElementById("defaultOpenExp").click();
 
 
+//  Age 
+// My age on the about tab
+const now = new Date();
+const birth = {
+    birthYear : 1995,
+    birthDay : 31,
+};
+
+let day = now.getUTCDay();
+let age = now.getUTCFullYear()-birth.birthYear;
+let month = now.getMonth();
 
 
+console.log(age)
+
+if(month == 0){
+    if( day < birth.birthDay) {
+        age--;
+    }
+}
+
+document.getElementById("age").innerHTML = age;
 
 
 
