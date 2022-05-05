@@ -63,7 +63,9 @@
 
             const phrases = [
                 'Quentin B.',
-                '{prenom}'
+                '{prenom}',
+                'SnOupax',
+                '{pseudo}'
             ]
 
             const el = document.querySelector('.text')
