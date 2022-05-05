@@ -428,6 +428,8 @@ header hr {
     box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
 }
 
+
+
 .menuM-Item h3 {
     display: inline-block;
     font-family: 'Lato', sans-serif;
@@ -645,7 +647,6 @@ main {
     width: 80%;
     margin: 0 auto;
     text-align: center;
-    min-height: 250px;
     background: #fff;
     border-radius: 5px;
 }
@@ -906,7 +907,7 @@ main {
     align-self: flex-end;
     padding-left: 20px;
     padding-right: 20px;
-    border-right: solid 5px#7ED957;
+    border-right: solid 5px #7ED957;
 
 }
 
@@ -1388,6 +1389,11 @@ footer hr {
         color: white;
         text-align: center;
         padding: 12px;
+        cursor: pointer;
+    }
+
+    .menu-Item:hover {
+        background-color: #7ED957;
     }
 
     .menu-Item h3 {
