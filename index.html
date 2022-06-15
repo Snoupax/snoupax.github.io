@@ -1,98 +1,105 @@
 <!DOCTYPE html>
- <html lang="fr">
-    <head>
-        <title>CV Quentin B.</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-        <!-- font-family: 'Lato', sans-serif; -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
-    </head>
+<html lang="fr">
 
-    <body>
-        <!-- Header -->
-        <header> 
-            <!-- Banniere -->
-            <div class="banniere">
-                <div id="textScramble">
-                    <h1 class="text">Quentin B.</h1>
-                </div>
-                
-                <h2>Developpeur Web Junior</h2>
-                <!-- <a id="linkCV" href="img/CVQuentin.pdf" alt="Lien pour telecharger le CV de Quentin B." target="_blank"><button id="buttonCV">Télécharger CV</button></a> -->
+<head>
+    <title>CV Quentin B.</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!-- font-family: 'Lato', sans-serif; -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" />
+</head>
 
-                <a id="btnCV" href="img/CV.Quentin.Biadala.pdf" alt="Lien pour telecharger le CV de Quentin B." target="_blank">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Télécharger CV
-                </a>
-                <hr>
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Banniere -->
+        <div class="banniere">
+            <div id="textScramble">
+                <h1 class="text">Quentin B.</h1>
             </div>
-            <!-- Nav PC -->
-            <section class="menu">
-                <div class="menu-Item tabLink" onclick="openPage('about', this, '#7ED957')" id="defaultOpen">
-                    <h3>A propos</h3>
-                </div>
-                <div class="menu-Item tabLink" onclick="openPage('skills', this, '#7ED957')">
-                    <h3>Compétences</h3>
-                </div>
-                <div class="menu-Item tabLink" onclick="openPage('portfolio', this, '#7ED957')">
-                    <h3>Portefolio</h3>
-                </div>
-                <div class="menu-Item tabLink" onclick="openPage('experience', this, '#7ED957')">
-                    <h3>Parcours</h3>
-                </div>
-                <div class="menu-Item tabLink" onclick="openPage('contact', this, '#7ED957')">
-                    <h3>Contact</h3>
-                </div>
-            </section>
+
+            <h2>Developpeur Web Junior</h2>
+            <!-- <a id="linkCV" href="img/CVQuentin.pdf" alt="Lien pour telecharger le CV de Quentin B." target="_blank"><button id="buttonCV">Télécharger CV</button></a> -->
+
+            <a id="btnCV" href="img/CV.Quentin.Biadala.pdf" alt="Lien pour telecharger le CV de Quentin B."
+                target="_blank">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Télécharger CV
+            </a>
             <hr>
-            <!-- Nav Mobile -->
-            <section class="menuMobile">
-                <div>
-                    <input type="checkbox" class="navigationCheckbox" id="navi">
-                    <label for="navi" class="navigationButton">
-                        <div class="hamburger nav-icon">
-                            <span class="bar bar1"></span>
-                            <span class="bar bar2"></span>
-                            <span class="bar bar3"></span>
-                            <span class="bar bar4"></span>
-                            <span class="bar bar5"></span>
-                        </div>
-                          
+        </div>
+        <!-- Nav PC -->
+        <section class="menu">
+            <div class="menu-Item tabLink" onclick="openPage('about', this, '#7ED957')" id="defaultOpen">
+                <h3>A propos</h3>
+            </div>
+            <div class="menu-Item tabLink" onclick="openPage('skills', this, '#7ED957')">
+                <h3>Compétences</h3>
+            </div>
+            <div class="menu-Item tabLink" onclick="openPage('portfolio', this, '#7ED957')">
+                <h3>Portefolio</h3>
+            </div>
+            <div class="menu-Item tabLink" onclick="openPage('experience', this, '#7ED957')">
+                <h3>Parcours</h3>
+            </div>
+            <div class="menu-Item tabLink" onclick="openPage('contact', this, '#7ED957')">
+                <h3>Contact</h3>
+            </div>
+        </section>
+        <hr>
+        <!-- Nav Mobile -->
+        <section class="menuMobile">
+            <div>
+                <input type="checkbox" class="navigationCheckbox" id="navi">
+                <label for="navi" class="navigationButton">
+                    <div class="hamburger nav-icon">
+                        <span class="bar bar1"></span>
+                        <span class="bar bar2"></span>
+                        <span class="bar bar3"></span>
+                        <span class="bar bar4"></span>
+                        <span class="bar bar5"></span>
+                    </div>
 
-                        <!-- <span class="navigationIcon">&nbsp;</span> -->
-                    </label>
 
-                    
-
-                    <div class="navigationBg">&nbsp;</div>
-
-                    
-                    <nav class="nav">
+                    <!-- <span class="navigationIcon">&nbsp;</span> -->
+                </label>
 
 
-                        <div class="menuM-Item tabLink item-About" onclick="openPage('about', this, '#7ED957' ), triggerOff()" >
-                                <h3>A propos</h3>
-                        </div>
-                        <div class="menuM-Item tabLink item-Skills" onclick="openPage('skills', this, '#7ED957'), triggerOff()">
-                            <h3>Compétences</h3>
-                        </div>
-                        <div class="menuM-Item tabLink item-Portfolio" onclick="openPage('portfolio', this, '#7ED957'), triggerOff()">
-                            <h3>Portefolio</h3>
-                        </div>
-                        <div class="menuM-Item tabLink item-Experience" onclick="openPage('experience', this, '#7ED957'), triggerOff()">
-                            <h3>Parcours</h3>
-                        </div>
-                        <div class="menuM-Item tabLink item-Contact" onclick="openPage('contact', this, '#7ED957'), triggerOff()">
-                            <h3>Contact</h3>
-                        </div>
-                        <!-- <div class="container-frEnSwitch" style="display: none;">
+
+                <div class="navigationBg">&nbsp;</div>
+
+
+                <nav class="nav">
+
+
+                    <div class="menuM-Item tabLink item-About"
+                        onclick="openPage('about', this, '#7ED957' ), triggerOff()">
+                        <h3>A propos</h3>
+                    </div>
+                    <div class="menuM-Item tabLink item-Skills"
+                        onclick="openPage('skills', this, '#7ED957'), triggerOff()">
+                        <h3>Compétences</h3>
+                    </div>
+                    <div class="menuM-Item tabLink item-Portfolio"
+                        onclick="openPage('portfolio', this, '#7ED957'), triggerOff()">
+                        <h3>Portefolio</h3>
+                    </div>
+                    <div class="menuM-Item tabLink item-Experience"
+                        onclick="openPage('experience', this, '#7ED957'), triggerOff()">
+                        <h3>Parcours</h3>
+                    </div>
+                    <div class="menuM-Item tabLink item-Contact"
+                        onclick="openPage('contact', this, '#7ED957'), triggerOff()">
+                        <h3>Contact</h3>
+                    </div>
+                    <!-- <div class="container-frEnSwitch" style="display: none;">
                             <div class="frEnSwitch">
                                 <input type="checkbox" name="frEnSwitch" class="frEnSwitch-checkbox" id="frEnSwitch1" checked tabindex="0">
                                 <label class="frEnSwitch-label" for="frEnSwitch1">
@@ -103,42 +110,50 @@
                             </div>
                         </div> -->
 
-                    </nav>
-                    
+                </nav>
 
-                </div>
-                
-            </section>
-            
-        </header>
-        <!-- Main -->
-        <main>
-            <div class="main-container">
-                <!-- About -->
+
+            </div>
+
+        </section>
+
+    </header>
+    <!-- Main -->
+    <main>
+        <div class="main-container">
+            <!-- About -->
             <section id="about" class="tabContent">
                 <h2>A propos</h2>
                 <div class="about-content">
                     <div id="textAbout">
-                        <p>&emsp; Jeune homme de <span id="age"></span> ans passionné par l'informatique, ayant commencé en autodidacte l'apprentissage de la programmation par le langage C, m'étant contenté des bases pour ensuite poursuivre avec l'HTML, CSS et PHP. Je continue de me former en autodidacte sur le JavaScript. Ayant commencé un contrat d'insertion numérique chez Ageval, j'apprends et je pratique mes connaissances sur des projets fictifs. Je souhaite suivre une formation dans le domaine de la programmation, ayant pour but premier de devenir Développeur Web et application mobile.</p>
+                        <p>&emsp; Jeune développeur web de <span id="age"></span> ans commencé mon parcours dans la
+                            programmation en autodidacte avec les bases du languages C, puis poursuivi mon apprentissage
+                            avec HTML, CSS, PHP et Javascript. Avant d'entamer un titre Professionnel de Developpeur
+                            Web/Web Mobile qui m'a permis d'enrichir mes compétences, d'acquérir des bases dans de
+                            nouveaux languages(TypeScript), de nouvelles bibliothèques(React), m'initier au Framework
+                            (Symfony) et découvrir plusieurs CDN.
+                            Actuellement, je recherche un poste afin d'appliquer ses connaissances dans la
+                            programmation, mais aussi de
+                            parfaire ces dernières tout en élargissant son domaine de compétence. </p>
                     </div>
-    
                     <div class="hobbies">
                         <h3>Centres d'intérêts</h3>
                         <div class="grid-hobbies">
                             <div class="hobbies-img-container">
-                                <img class="hobbies-img" src="img/musique.png" alt="Musique">
+                                <img class="hobbies-img" src="img/basketball.png" alt="Basketball">
                             </div>
                             <div class="hobbies-img-container">
                                 <img class="hobbies-img" src="img/nature.png" alt="Nature">
                             </div>
                             <div class="hobbies-img-container">
-                                <img class="hobbies-img" src="img/artpixel.png" alt="Pixel Art">
+                                <img class="hobbies-img" src="img/musique.png" alt="Musique">
+                            </div>
+
+                            <div class="hobbies-img-container">
+                                <img class="hobbies-img" src="img/jeuxvideo.png" alt="Jeux Vidéo">
                             </div>
                             <div class="hobbies-img-container">
                                 <img class="hobbies-img" src="img/natation.png" alt="Natation">
-                            </div>
-                            <div class="hobbies-img-container">
-                                <img class="hobbies-img" src="img/basketball.png" alt="Basketball">
                             </div>
                         </div>
                     </div>
@@ -170,12 +185,37 @@
                                     <img class="skill-logo" src="img/git-alt-brands.svg" alt="Logo Git">
                                 </div>
                                 <div class="logo-container">
-                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg" alt="Logo Visual Studio Code">
-                                </div>                                                    
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
+                                <div class="logo-container">
+                                    <img class="skill-logo" src="img/visual-studio-code-noir.svg"
+                                        alt="Logo Visual Studio Code">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
+
 
                     <div class="design-card">
                         <div class="skills-design-container">
@@ -185,16 +225,17 @@
                                     <img class="skill-logo" src="img/adobe-photoshop-2.svg" alt="Logo Photoshop">
                                 </div>
                                 <div class="logo-container">
-                                    <img class="skill-logo" src="img/adobe-illustrator-cc-2019.svg" alt="Logo Illustrator">
+                                    <img class="skill-logo" src="img/adobe-illustrator-cc-2019.svg"
+                                        alt="Logo Illustrator">
                                 </div>
                                 <div class="logo-container">
                                     <img class="skill-logo" src="img/Aseprite_logo.png" alt="Logo Aseprite">
                                 </div>
                             </div>
                         </div>
-                        </div>
-                        
-                   
+                    </div>
+
+
                     <!-- <div class="skillsLang">
                         <h3>Langues</h3>
                         <img class="skill-flag-lang" src="img/pngfind.com-france-png-2853001.png" alt="Français">
@@ -227,15 +268,6 @@
                     <div class="grid-item">
                         <img class="grid-img" src="img/gif-coming-soon.gif" alt="On test">
                     </div>
-                    <div class="grid-item">
-                        <img class="grid-img" src="img/gif-coming-soon.gif" alt="On test">
-                    </div>
-                    <div class="grid-item">
-                        <img class="grid-img" src="img/gif-coming-soon.gif" alt="On test">
-                    </div>
-                    <div class="grid-item">
-                        <img class="grid-img" src="img/gif-coming-soon.gif" alt="On test">
-                    </div>
 
                 </div>
             </section>
@@ -247,7 +279,8 @@
                 <div class="expContainer">
                     <div class="exp_Title">
                         <div class="titleButton">
-                            <div id="defaultOpenExp" class="titleExp tabLinkExp" onclick="ExpPage('expContent', this, '#7ED957')" >
+                            <div id="defaultOpenExp" class="titleExp tabLinkExp"
+                                onclick="ExpPage('expContent', this, '#7ED957')">
                                 <h3>Expériences</h3>
                             </div>
                             <div class="titleTraining tabLinkExp" onclick="ExpPage('trainingContent', this, '#7ED957')">
@@ -309,61 +342,64 @@
                     </div>
                 </div>
             </section>
-            
+
             <!-- contact -->
             <section id="contact" class="tabContent" style="display:none">
                 <h2>Vous souhaitez me contacter ? <br>
                     Vous êtes au bon endroit !</h2>
-                    <div class="contactContent">
-                        <a class="contactLogoR" href="tel:0629340563" alt="Lien pour appeler Quentin B.">
-                            <p class="contact-hover">Appelez-moi</p>
-                            <img class="imgLogo" src="img/phone-square-solid.svg" alt="Téléphone">
-                        </a>
-                        
-                        <a class="contactLogoL" href="mailto:Quentin.biadala@gmail.com" alt="Lien pour envoyer un mail à Quentin B.">
-                            <img class="imgLogo" src="img/envelope-square-solid.svg" alt="Email">
-                            <p class="contact-hover">Envoyez-moi un mail</p>
-                        </a>
-                        <a class="contactLogoR" href="https://github.com/Snoupax" target="_blank" alt="Lien du GitHub de Quentin B.">
-                            <p class="contact-hover">Visitez mon GitHub</p>
-                            <img class="imgLogo" src="img/github-square-brands.svg" alt="GitHub">  
-                        </a>
-                        
-                        <a class="contactLogoL" href="https://www.linkedin.com/in/qtilted/" target="_blank">
-                            <img class="imgLogo" src="img/linkedin-brands.svg" alt="LinkedIn">
-                            <p class="contact-hover">Retrouvez-moi sur LinkedIn</p>
-                        </a>
-                        
-                        
-                        
-                        
-                    </div>
-            </section>
-            </div>
-        </main>
-        <!-- Footer -->
-        <footer>
-            <hr>
-            <section class="footer">
-                <p class="copyright">
-                    Copyright © <span id="year"></span> 
-                    <br>
-                    Site web developpé par Snoupax.
-                    <br>
-                    Tous droits réservés.
-                </p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-            </section>
-        </footer>
+                <div class="contactContent">
+                    <a class="contactLogoR" href="tel:0629340563" alt="Lien pour appeler Quentin B.">
+                        <p class="contact-hover">Appelez-moi</p>
+                        <img class="imgLogo" src="img/phone-square-solid.svg" alt="Téléphone">
+                    </a>
 
-        <!-- Tabulation / TriggerOff for NavMobile / TabulationExperience -->
-        <script src="js/main.js"></script>
-        <!-- Text Scramble -->
-        <script src="js/textScramble.js"></script>
-    </body>
- </html>
+                    <a class="contactLogoL" href="mailto:Quentin.biadala@gmail.com"
+                        alt="Lien pour envoyer un mail à Quentin B.">
+                        <img class="imgLogo" src="img/envelope-square-solid.svg" alt="Email">
+                        <p class="contact-hover">Envoyez-moi un mail</p>
+                    </a>
+                    <a class="contactLogoR" href="https://github.com/Snoupax" target="_blank"
+                        alt="Lien du GitHub de Quentin B.">
+                        <p class="contact-hover">Visitez mon GitHub</p>
+                        <img class="imgLogo" src="img/github-square-brands.svg" alt="GitHub">
+                    </a>
+
+                    <a class="contactLogoL" href="https://www.linkedin.com/in/qtilted/" target="_blank">
+                        <img class="imgLogo" src="img/linkedin-brands.svg" alt="LinkedIn">
+                        <p class="contact-hover">Retrouvez-moi sur LinkedIn</p>
+                    </a>
+
+
+
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <hr>
+        <section class="footer">
+            <p class="copyright">
+                Copyright © <span id="year"></span>
+                <br>
+                Site web developpé par Snoupax.
+                <br>
+                Tous droits réservés.
+            </p>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+        </section>
+    </footer>
+
+    <!-- Tabulation / TriggerOff for NavMobile / TabulationExperience -->
+    <script src="js/main.js"></script>
+    <!-- Text Scramble -->
+    <script src="js/textScramble.js"></script>
+</body>
+
+</html>
